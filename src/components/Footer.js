@@ -15,7 +15,7 @@ const footer = () => {
         <div>
             <h4 style={styleH4}>Navigation</h4>
                 {nav_links.map(link =>{
-                    return <p><a style={styleA} href="#">{link}</a></p>
+                    return <p key={link}><a key={link} style={styleA} href="#">{link}</a></p>
                 })}
         </div>
         <div>
