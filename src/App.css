@@ -1,5 +1,6 @@
 .hero-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #495E57;
     color: white;
@@ -36,4 +37,19 @@
 .hero-section button:hover{
     color: white;
     cursor: pointer;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLink{
+    margin: 1.5em;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.navLink:hover{
+    color: #F4CE14;
 }
