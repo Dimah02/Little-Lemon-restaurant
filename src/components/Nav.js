@@ -5,8 +5,8 @@ const Nav = () => {
         <img src={require("../assets/Logo.png")} />
         {nav_links.map(link => {
             if (link !== "Home")
-                return <Link className='navLink' to={"/" + link}>{link}</Link>
-            return <Link className='navLink' to={"/"} >{link}</Link>
+                return <Link key={link} className='navLink' to={"/" + link}>{link}</Link>
+            return <Link key={link} className='navLink' to={"/"} >{link}</Link>
         })}
     </nav>);
 }
