@@ -17,7 +17,6 @@ const updateTimes  = (state,action)  =>{
 const Main = () => {
     const initializeTimes = ["17:00","18:00","21:00"];
     const [availableTime,dispatch] = useReducer(updateTimes,initializeTimes);
-    console.log(availableTime)
 
     return ( <main>
     <Routes>
